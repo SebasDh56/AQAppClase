@@ -3,19 +3,19 @@
     x:Class="AQAppClase.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:AQAppClase"
+    xmlns:views ="clr-namespace:AQAppClase.AQViews"
     Shell.FlyoutBehavior="Disabled"
     Title="AQAppClase">
 
     <TabBar>
         <ShellContent
-            Title="AQAppClase"
-            ContentTemplate="{DataTemplate local:MainPage}"
+            Title="AQNotes"
+            ContentTemplate="{DataTemplate views:AQAllNotesPage}"
             Icon="{OnPlatform 'icon_notes.png', iOS='icon_notes_ios.png', MacCatalyst='icon_notes_ios.png'}" />
 
         <ShellContent
             Title="AQAbout"
-            ContentTemplate="{DataTemplate local:AQAboutPage}"
+                ContentTemplate="{DataTemplate local:AQAboutPage}"
             Icon="{OnPlatform 'icon_about.png', iOS='icon_about_ios.png', MacCatalyst='icon_about_ios.png'}" />
     </TabBar>
 
