@@ -5,7 +5,7 @@
              Title="AQNotePage">
 
     <ContentPage.BindingContext>
-        <viewModels:AQNotesViewModel />
+        <viewModels:AQNoteViewModel />
     </ContentPage.BindingContext>
     
     <VerticalStackLayout Spacing="10" Margin="5">
